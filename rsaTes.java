@@ -38,3 +38,14 @@ public class rsaTes extends JFrame {
 			}
 		});
 	}
+boolean isPrime(int n) 
+        {
+            //kontrollojm nese numri i dhene modul me 2 eshte 0(atehere eshte qift)
+            if (n%2==0 && n > 2) return false;
+            //nese eshte tek atehere fillojm te kerkoj nese ka plotpjestues(nese eshte prim)
+            for(int i=3;i*i<=n;i+=2) {
+                if(n%i==0)
+                    return false;
+            }
+            return true;
+        }
