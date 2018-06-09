@@ -129,3 +129,21 @@ public rsaTes() {
 		txtPrivat.setBounds(131, 544, 473, 26);
 		contentPane.add(txtPrivat);
 		
+		JButton btnGjenero = new JButton("Gjenero");
+		btnGjenero.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) 
+			{
+				//kontrolloj nese perdoruesi ka jepur numrat prim p edhe q, nese jo atehere ne therrasim rsa klasen permes konstruktorit qe 
+				//do gjeneroj vet dy numra prim, qelsin publik dhe privat
+				if(txtP.getText().equals("") && txtQ.getText().equals(""))
+				{
+					rsa rsaObj = new rsa();
+					txtP.setText(String.valueOf(rsaObj.p));
+					txtQ.setText(String.valueOf(rsaObj.q));
+					txtN.setText(String.valueOf(rsaObj.N));
+					txtE.setText(String.valueOf(rsaObj.e));
+					txtPhi.setText(String.valueOf(rsaObj.phi));
+					txtD.setText(String.valueOf(rsaObj.d));
+                                        txtPublik.setText(String.valueOf(rsaObj.e)+","+String.valueOf(rsaObj.N));
+                                        txtPrivat.setText(String.valueOf(rsaObj.d)+","+String.valueOf(rsaObj.N));
+                                }
