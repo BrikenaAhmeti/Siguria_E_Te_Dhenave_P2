@@ -52,3 +52,9 @@ int modInverse(int a, int m)
             y = x - q * y;
             x = t;
         }
+ //x-i e kthejm ne pozitiv nese ka ndodhur qe te jete negativ, x do jete d
+        if (x < 0)
+            x += m0;
+ 
+        return x;
+    }
