@@ -72,3 +72,20 @@ public rsa()
         }
         d = e.modInverse(phi);    
     }
+  public rsa(int p1,int q1)
+    {
+    	ps = p1;
+    	qs = q1;
+    	
+    	Ns = ps*qs;
+    	phis = (ps-1)*(qs-1);
+    	es=2;
+    	while(es<phis)
+    	{
+    		if (gcd(es, phis)==1)
+                    break;
+                else
+                    es++;
+    	}
+    	ds = modInverse(es,phis);   
+    }
