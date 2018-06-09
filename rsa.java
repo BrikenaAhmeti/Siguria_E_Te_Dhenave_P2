@@ -58,3 +58,9 @@ int modInverse(int a, int m)
  
         return x;
     }
+public rsa()
+    {
+        r = new Random();
+        p = BigInteger.probablePrime(bitlength, r);
+        q = BigInteger.probablePrime(bitlength, r);
+        N = p.multiply(q);
