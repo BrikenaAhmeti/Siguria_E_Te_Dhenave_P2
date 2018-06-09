@@ -17,3 +17,16 @@ public class rsa
     int phis;
     int es;
     int ds;
+    
+int gcd(int a, int h)
+{
+    int temp;
+    while (true)
+    {
+        temp = a%h;
+        if (temp == 0)
+          return h;
+        a = h;
+        h = temp;
+    }
+}
