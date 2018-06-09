@@ -147,3 +147,17 @@ public rsaTes() {
                                         txtPublik.setText(String.valueOf(rsaObj.e)+","+String.valueOf(rsaObj.N));
                                         txtPrivat.setText(String.valueOf(rsaObj.d)+","+String.valueOf(rsaObj.N));
                                 }
+				else
+                                {
+                                	//kontrollojm nese numrat qe ka jepur perdoruesi jane numra prim 
+                                  int p = Integer.parseInt(txtP.getText());
+                                  int q = Integer.parseInt(txtQ.getText()); 
+                                  boolean prime1=false;
+                                  boolean prime2=false;
+                                  if((isPrime(p)) && (isPrime(q)) && p!=q)
+                                  {
+                                	  //thirrja e klases rsa me kontruktorin qe ka dy parametra 
+                                      rsa objRsa1 = new rsa(p,q);
+                                        txtP.setText(String.valueOf(objRsa1.ps));
+					txtQ.setText(String.valueOf(objRsa1.qs));
+					txtN.setText(String.valueOf(objRsa1.Ns));
