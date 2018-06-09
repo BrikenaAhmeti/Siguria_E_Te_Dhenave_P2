@@ -65,3 +65,30 @@ public rsaTes() {
 		JLabel lblP = new JLabel("Numri p:");
 		lblP.setBounds(24, 32, 98, 20);
 		contentPane.add(lblP);
+	
+		txtQ = new JTextField();
+		txtQ.setColumns(10);
+		txtQ.setBounds(137, 93, 475, 26);
+		contentPane.add(txtQ);
+		
+		JLabel lblq = new JLabel("Numri q:");
+		lblq.setBounds(24, 96, 78, 20);
+		contentPane.add(lblq);
+		
+		txtN = new JTextField();
+		txtN.setColumns(10);
+		txtN.setBounds(129, 219, 475, 26);
+		contentPane.add(txtN);
+		
+		JLabel lblN = new JLabel("Numri N:");
+		lblN.setBounds(24, 225, 78, 14);
+		contentPane.add(lblN);
+		
+		JLabel lblPhi = new JLabel("Numri phi:");
+		lblPhi.setBounds(24, 275, 78, 20);
+		contentPane.add(lblPhi);
+		
+		txtPhi = new JTextField();
+		txtPhi.setColumns(10);
+		txtPhi.setBounds(129, 272, 475, 26);
+		contentPane.add(txtPhi);
