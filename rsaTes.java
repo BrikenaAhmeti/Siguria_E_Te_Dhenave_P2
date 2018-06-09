@@ -161,3 +161,22 @@ public rsaTes() {
                                         txtP.setText(String.valueOf(objRsa1.ps));
 					txtQ.setText(String.valueOf(objRsa1.qs));
 					txtN.setText(String.valueOf(objRsa1.Ns));
+					  		txtE.setText(String.valueOf(objRsa1.es));
+					txtPhi.setText(String.valueOf(objRsa1.phis));
+					txtD.setText(String.valueOf(objRsa1.ds));
+                                        txtPublik.setText(String.valueOf(objRsa1.es)+","+String.valueOf(objRsa1.Ns));
+                                        txtPrivat.setText(String.valueOf(objRsa1.ds)+","+String.valueOf(objRsa1.Ns));
+                                  }
+                                  else
+                                  {
+                                	  //nese nuk jane prim atehere nuk realizohet gjetja e qelsit privat dhe publik
+                                      JOptionPane.showMessageDialog(null,"Numrat e shënuar nuk janë prim ose jane te barabarte!");
+                                  }                                
+                                }	
+			}
+		});
+		btnGjenero.setBounds(459, 145, 133, 46);
+		contentPane.add(btnGjenero);
+	}
+}
+
