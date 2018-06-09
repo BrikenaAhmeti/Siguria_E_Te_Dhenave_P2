@@ -89,3 +89,15 @@ public rsa()
     	}
     	ds = modInverse(es,phis);   
     }
+     public String getPublicKey()
+    {   
+        String key = "Public key: "+e+","+N;
+        return key;
+    }
+    public String getPrivateKey()
+    {   
+        String key = "Public key: "+d+","+N;
+        return key;
+    }    
+}
+
