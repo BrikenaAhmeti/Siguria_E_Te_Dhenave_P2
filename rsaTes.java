@@ -92,3 +92,21 @@ public rsaTes() {
 		txtPhi.setColumns(10);
 		txtPhi.setBounds(129, 272, 475, 26);
 		contentPane.add(txtPhi);
+		
+		JLabel lblE = new JLabel("Numri e:");
+		lblE.setBounds(24, 339, 78, 14);
+		contentPane.add(lblE);
+		
+		txtE = new JTextField();
+		txtE.setColumns(10);
+		txtE.setBounds(129, 333, 475, 26);
+		contentPane.add(txtE);
+		
+		JLabel lblD = new JLabel("Numri d:");
+		lblD.setBounds(24, 393, 104, 20);
+		contentPane.add(lblD);
+		
+		txtD = new JTextField();
+		txtD.setColumns(10);
+		txtD.setBounds(129, 390, 475, 26);
+		contentPane.add(txtD);
