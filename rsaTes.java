@@ -110,3 +110,22 @@ public rsaTes() {
 		txtD.setColumns(10);
 		txtD.setBounds(129, 390, 475, 26);
 		contentPane.add(txtD);
+	
+	       JLabel lblPublic = new JLabel("Celesi publik:");
+		lblPublic.setBounds(10, 496, 105, 20);
+		contentPane.add(lblPublic);
+		
+		txtPublik = new JTextField();
+		txtPublik.setColumns(10);
+		txtPublik.setBounds(131, 493, 473, 26);
+		contentPane.add(txtPublik);
+		
+		JLabel lblPrivat = new JLabel("Celesi privat:");
+		lblPrivat.setBounds(10, 547, 118, 20);
+		contentPane.add(lblPrivat);
+		
+		txtPrivat = new JTextField();
+		txtPrivat.setColumns(10);
+		txtPrivat.setBounds(131, 544, 473, 26);
+		contentPane.add(txtPrivat);
+		
