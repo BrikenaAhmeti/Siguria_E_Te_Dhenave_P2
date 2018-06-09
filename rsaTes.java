@@ -49,3 +49,19 @@ boolean isPrime(int n)
             }
             return true;
         }
+public rsaTes() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 676, 642);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		txtP = new JTextField();
+		txtP.setBounds(137, 29, 475, 26);
+		contentPane.add(txtP);
+		txtP.setColumns(10);
+		
+		JLabel lblP = new JLabel("Numri p:");
+		lblP.setBounds(24, 32, 98, 20);
+		contentPane.add(lblP);
